@@ -1,3 +1,17 @@
+# Show-Maker
+This is a Movie related Web app.
+
+## Website links
+Click Site :[Live Site](https://show-maker.web.app/)
+![Click here](https://i.ibb.co/xg8dn7Q/Fire-Shot-Capture-001-React-App-show-maker-web-app.png)
+
+## functionalities
+
+* Super interactive and easy to use website
+* You can see Movie 
+* User friendly  
+* We have Login/Registration system for our Registered customer.
+* Use Redux for Wishlist
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

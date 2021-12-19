@@ -8,7 +8,7 @@ const DeleteMovies = () => {
 
     const [service, setService] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://shrouded-tor-41331.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setService(data))
 
@@ -16,7 +16,7 @@ const DeleteMovies = () => {
     const handleDeleteUser = id => {
         const proceed = window.confirm('Are you sure you want to delete')
         if (proceed) {
-            const url = `http://localhost:5000/services/${id}`
+            const url = `https://shrouded-tor-41331.herokuapp.com/services/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
@@ -33,7 +33,7 @@ const DeleteMovies = () => {
     }
     return (
         <Container>
-            <Row xs={1} md={5} className="g-3">
+            {/* <Row xs={1} md={5} className="g-3">
 
                 {
                     service.map(values => <Col className='my-5 '>
@@ -43,11 +43,11 @@ const DeleteMovies = () => {
                                 <Card.Title className='text-light'>{values.title}</Card.Title>
                                 <Card.Text>
                                     <p className='text-muted'>{values.genre}</p>
-                                </Card.Text>
+                                </Card.Text> */}
 
-                                {/* <Link to={`/services/${service._id}`}><button>update</button></Link> */}
-                                <br />
-                            </Card.Body>
+            {/* <Link to={`/services/${service._id}`}><button>update</button></Link> */}
+            <br />
+            {/* </Card.Body>
                             <Card.Footer>
                                 <Button variant="outline-light" onClick={() => handleDeleteUser(values._id)}>DELETE</Button>
                             </Card.Footer>
@@ -55,10 +55,29 @@ const DeleteMovies = () => {
 
                     </Col>)
 
-                }
+                } */}
 
-            </Row>
+            {/* </Row> */}
+            <Table striped bordered hover size="sm">
+                <thead>
+                    <tr>
 
+                        <th className='text-light'>Title</th>
+                        <th className='text-light'>Image</th>
+                        <th className='text-light'>Genre</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {service.map(values => <tr>
+                        <td className='text-light'>{values.title}</td>
+                        <td  ><img className='img-fluid w-25' src={values.url} alt="" /></td>
+                        <td className='text-light'>{values.genre}</td>
+                        <td className='text-light'><Button variant="outline-light" onClick={() => handleDeleteUser(values._id)}>DELETE</Button></td>
+
+                    </tr>)
+                    }
+                </tbody>
+            </Table>)
         </Container>
     );
 };

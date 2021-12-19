@@ -6,7 +6,7 @@ const MovieReview = () => {
     const { register, handleSubmit, formState: { errors, } } = useForm();
 
     const onSubmit = (inputData, e) => {
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://shrouded-tor-41331.herokuapp.com/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

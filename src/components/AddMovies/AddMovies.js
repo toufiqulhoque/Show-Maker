@@ -4,7 +4,7 @@ import { useForm } from 'react-hook-form';
 const AddMovies = () => {
     const { register, handleSubmit, formState: { errors, } } = useForm();
     const onSubmit = (inputData, e) => {
-        fetch('http://localhost:5000/services', {
+        fetch('https://shrouded-tor-41331.herokuapp.com/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

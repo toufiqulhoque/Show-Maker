@@ -4,7 +4,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
 export const fetchmovies = createAsyncThunk(
     'movie/fetchmovies',
     async () => {
-        const response = await fetch('http://localhost:5000/services').then(res => res.json())
+        const response = await fetch('https://shrouded-tor-41331.herokuapp.com/services').then(res => res.json())
         // console.log(response);
         return response
     }
@@ -12,7 +12,7 @@ export const fetchmovies = createAsyncThunk(
 export const fetchreviews = createAsyncThunk(
     'review/fetchreviews',
     async () => {
-        const response = await fetch('http://localhost:5000/reviews').then(res => res.json())
+        const response = await fetch('https://shrouded-tor-41331.herokuapp.com/reviews').then(res => res.json())
         // console.log(response);
         return response
     }
