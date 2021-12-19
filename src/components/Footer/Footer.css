@@ -1,0 +1,23 @@
+.footer{
+    text-decoration-line: underline;
+    text-decoration-color: #FF0000;
+    text-decoration-style: solid;
+    text-underline-offset: 15px;
+    font-weight: 700; 
+      
+}
+.footer-icon-single{
+    color: #FF0000 ;
+}
+
+.footer-icon-single:hover{
+    color: white ;
+}
+
+@media only screen and (max-width: 510px){
+	/*Small smartphones [325px -> 425px]*/
+    .footer-icon-single{
+      display: none;
+    }
+  
+}

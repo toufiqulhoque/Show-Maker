@@ -1,0 +1,21 @@
+.mbl{
+    align-items: center;
+    
+}
+.mbl-2{
+    text-align: start;
+    margin-left: 5%;
+    
+}
+.mbl-button{
+    background-color: #FF0000;
+    border-color: #FF0000;
+    
+}
+.mbl-button:hover{
+    background-color: #FF0000;
+    border: 2px solid white;
+    box-shadow: .2px .2px 30px 1px white;
+   
+
+}

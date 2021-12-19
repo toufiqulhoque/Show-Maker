@@ -1,0 +1,22 @@
+.card-border{
+    background-color: #222831;
+    height:90%; 
+    overflow: hidden;
+    color: white;
+}
+.img1:hover{
+    transform: scale(1.1);
+    transition: all .5s linear;
+}
+
+.card-body{
+    padding-bottom: 0;
+    height: 16vh;
+}
+.text-style{
+    font-size: 1rem;
+}
+.text-style1{
+    font-size: 1rem;
+}
+

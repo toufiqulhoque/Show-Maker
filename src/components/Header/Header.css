@@ -1,0 +1,63 @@
+
+.nav-text-style {
+      font-weight: 700;
+    color: white;
+}
+ .nav-text-style:hover{
+    color: #FF0000;
+}
+
+.user-text{
+    font-weight: 700;
+}
+.header-font{
+    font-weight: 700;
+}
+.logo{
+    font-weight: 800;
+}
+.navbar-toggler-icon{
+    color: #FF0000 !important;
+}
+.nav-bar{
+    /* margin-bottom: -70px; */
+    z-index: 2;
+} 
+.badge-header{
+    margin-bottom: -12px;
+}
+ 
+@media only screen and (max-width: 425px){
+	
+  .container{   
+      
+      margin-top:-10px ;
+  }
+  #navbarScroll{
+    position: absolute;
+    
+    top:85%;
+    
+  }
+  
+ 
+  .navbarScroll{
+      position: absolute;
+  }
+ 
+}
+@media only screen and (max-width: 985px ){
+    .navbarScroll{
+        position: absolute;
+    }
+    #navbarScroll{
+        position: absolute;
+        left: 40%;
+        top:85%
+    }
+   
+    #scroll{
+        background-color: white;
+    }
+        
+} 

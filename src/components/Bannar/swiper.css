@@ -1,0 +1,29 @@
+.box{
+  box-shadow: rgba(119, 119, 119, 0.322);
+}
+.box{
+  margin-top: -72px;
+  
+}
+body {
+  background: rgb(0, 0, 0);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #ff0000;
+  margin: 0;
+  padding: 0;
+}
+.bannar{
+  
+  filter: brightness(.80);
+}
+
+
+@media only screen and (max-width: 700px){
+	/*Big smartphones [426px -> 600px]*/
+.bannar{
+  height: 320px;
+ 
+}
+}
+
