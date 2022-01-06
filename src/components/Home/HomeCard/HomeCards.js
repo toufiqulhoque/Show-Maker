@@ -21,7 +21,7 @@ const HomeCards = (props) => {
     return (
         <div>
 
-            <Col className='my-5 card-border'>
+            <Col data-aos="zoom-in" data-aos-duration="2000" className='my-5 card-border'>
                 <Card className='h-100 hover-card card-border' >
                     <Card.Img className='img1  ' variant="top" src={url} height='300' />
                     <Card.Body>

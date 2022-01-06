@@ -26,7 +26,7 @@ const AllMovies = (props) => {
         <div>
 
             <Col className='my-5 card-border'>
-                <Card className='h-100 hover-card card-border ' >
+                <Card data-aos="zoom-out" data-aos-duration="1000" className='h-100 hover-card card-border ' >
                     <Card.Img className='img1  ' variant="top" src={url} height='300' />
                     <Card.Body >
                         <Card.Title >{title}</Card.Title>

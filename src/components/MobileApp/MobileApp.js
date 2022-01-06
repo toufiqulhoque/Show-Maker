@@ -6,10 +6,10 @@ const MobileApp = () => {
     return (
         <Container>
             <Row className='mbl'>
-                <Col className='py-5'>
+                <Col data-aos="fade-right" className='py-5'>
                     <img src="https://i.ibb.co/vcMSqCm/image-avod-devices-all-may-2021-1440x872-removebg-preview-1.png" alt="" />
                 </Col>
-                <Col className='mbl-2'>
+                <Col data-aos="fade-left" className='mbl-2'>
                     <div className='text-white'>
                         <h2>The hardest working app <div> in show business.</div></h2>
                     </div>

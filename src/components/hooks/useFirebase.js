@@ -1,6 +1,7 @@
-import initializeAuthentication from "../Firebase/firebase.init";
 import { createUserWithEmailAndPassword, getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup, signOut, updateProfile } from "firebase/auth";
 import { useEffect, useState } from "react";
+import initializeAuthentication from "../Firebase/firebase.init";
+
 initializeAuthentication();
 const useFirebase = () => {
     const [user, setUser] = useState({});
@@ -81,8 +82,8 @@ const useFirebase = () => {
 
     //taking data from register and put in DATABASE
     const saveUser = (email, displayName, method) => {
-        const user = { email, displayName }
-        fetch('https://shrouded-tor-41331.herokuapp.com/users', {
+        const user = { email, displayName };
+        fetch('http://localhost:5000/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'
@@ -103,7 +104,7 @@ const useFirebase = () => {
         })
             .finally(() => setIsLoading(false));
     }
-    return { user, logout, loginUser, registerUser, loginWithGoogle, isLoading, authError }
+    return { user, admin, logout, loginUser, registerUser, loginWithGoogle, isLoading, authError }
 }
 
 export default useFirebase;

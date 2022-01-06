@@ -46,16 +46,7 @@ const Header = (props) => {
                             >
                                 All Movies
                             </NavLink>
-                            <NavLink
-                                className='nav-text-style text-decoration-none ms-3 mx-auto'
-                                to="/myMovies"
-                                activeStyle={{
-                                    fontWeight: "bold",
-                                    color: "#FF0000"
-                                }}
-                            >
-                                My Movies
-                            </NavLink>
+
                             {user.email &&
                                 <NavLink
                                     className='nav-text-style text-decoration-none ms-3 mx-auto'

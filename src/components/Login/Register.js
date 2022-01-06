@@ -10,6 +10,7 @@ const Register = () => {
     const { registerUser, user, isLoading, authError } = useAuth()
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = (data, e) => {
+        console.log(data)
         if (data.Password != data.Retype_Password) {
 
 
